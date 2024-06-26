@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+#background{
+    position: fixed;
+    z-index: -9;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+}
+
+#overlay{
+    position: fixed;
+    z-index: -8;
+    width: 100%;
+    height: 100%;
+    opacity: .2;
+    background-size: cover;
+    background-position: center;
+    background-image: url(texture.jpg);
+}
+
+#hero{
+    position: relative;
+    width: 100%;
+    height: 60vh;
+}
+
+#hero nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 100px;
+    height: 200px;
+}
+
+
+
+
+#hero nav #links{
+    display: flex;
+    align-items: center;
+}
+
+#links a{
+    color: #fff;
+    text-decoration: none;
+    margin-right: 30px;
+    font-size: 12px;
+}
+
+#hero nav img{
+    width: 120px;
+    filter: invert();
+}
+
+#hero nav>img{
+    width: 100px;
+}
+
+#hero>h1{
+    position: absolute;
+    top: 89%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 100px;
+    width: 80%;
+    font-size: 90px;
+    text-align: center;
+    color: white;
+    font-weight: 300;
+}
+
+#down{
+    width: 100%;
+}
+
+#down #image{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#down #image img{
+    width: 400px;
+}
+
+#text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0;
+}
+
+#text h3{
+    color: #fff;
+    font-weight: 100;
+    text-align: center;
+    width: 40%;
+    font-size: 35px;
+    margin-bottom: 70px;
+}
+
+#text img{
+    opacity: 0;
+}
+
+#circle{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height:200px;
+    border: 5px solid white;
+    border-radius: 50%;
+    pointer-events: none;
+    filter: blur(20px);
+}
